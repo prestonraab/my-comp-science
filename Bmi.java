@@ -70,6 +70,7 @@ public class Bmi extends JFrame
     w.setBounds(300, 300, 300, 160);
     w.setDefaultCloseOperation(EXIT_ON_CLOSE);
     w.setVisible(true);
+    System.out.println("hello");
   }
 }
 
