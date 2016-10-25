@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=int\ max(int,\ int)
+comment1.params=x\ y\ z
+comment1.target=int\ max(int,\ int,\ int)
+comment2.params=x\ y\ z
+comment2.target=int\ maximum(int,\ int,\ int)
+comment3.params=n
+comment3.target=boolean\ squareCheck(int)
+comment4.params=hours\ rate
+comment4.target=double\ totalWages(double,\ double)
+comment5.params=
+comment5.target=Chapter6Homework()
+comment5.text=\r\n\ \ \ \ \ \ \ \ 7\ C-\ the\ \!\ carries\ through\ and\ the\ or\ becomes\ and.\r\n\ \ \ \ \ \ \ \ 8a\ \!(x\ &&\ y)\ &&\ (a\ ||\ b)\r\n\ \ \ \ \ \ \ \ 8b\ if(x\ <7)\r\n\ \ \ \ \ \ \ \ 9a\ if((x+2\ >\ a\ \ ||\ \ x-2\ <\ b)\ &&\ y\ >\=\ 0))\r\n\ \ \ \ \ \ \ \ 9b\ if\ (a\ >\=\ b\ &&\ a\ >\=\ c\ &&\ a\ %2\ \=\=\ 0)\r\n\ \ \ \ \ \ \ \ 10\ if(x>7\ &&\ math.sqrt(x)\ <\ 3)\r\n\ \ \ \ \ \ \ \ 11\ a*b*c\ \!\=\ 0\ &&\ a*c\ \=\=\ b^2\ \r\n
+comment6.params=bp\ nb
+comment6.target=double\ getOrderTotal(int,\ int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8
