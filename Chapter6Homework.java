@@ -71,8 +71,10 @@ public class Chapter6Homework
    {
    }
    //Question number 17
-   //public class BooksCost
-   //{
+   /**
+    * public class BooksCost
+    * {
+   */
     public static double getOrderTotal(int bp, int nb)
     {
         double bpCost = 20.95;
@@ -112,7 +114,14 @@ public class Chapter6Homework
         int bp = input.nextInt();
         System.out.println("Enter number of Next Best books");
         int nb = input.nextInt();
-        System.out.println(getOrderTotal(bp, nb)+"");
+        System.out.println("Your total is: " +getOrderTotal(bp, nb));
     }
-   //}
+   /**
+    }
+    */
+   
+   //Question 21 - see other file.
+   
+   //Question 23 - see other file.
+   
 }

@@ -22,9 +22,14 @@ public class Take1_3
    */
   public int computerMove(int nStones)
   {
-
-    ________________________________
-    ...
+    if(nStones % 4 == 0)
+    {
+        return (int)Math.random()*3 + 1;
+    }
+    else
+    {
+        return nStones % 4;
+    }
   }
 
   /*
@@ -40,9 +45,20 @@ public class Take1_3
   {
     System.out.print("How many stones do you take? ");
     int n = kboard.nextInt();
-
-    ________________________________
-    ...
+    if(n > 3 ||  n < 1)
+    {
+        System.out.println("You are allowed to only take 1, 2, or 3 stones");
+        return -1;
+    }
+    else if(n > nStones)
+    {
+        System.out.println("Can't take that many: only " + nStones + "left in the pile");
+        return -1;
+    }
+    else
+    {
+        return n;
+    }
   }
 
   /**

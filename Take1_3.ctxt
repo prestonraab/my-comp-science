@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=Take1_3(int)
+comment1.params=nStones
+comment1.target=int\ computerMove(int)
+comment1.text=\n\ Returns\ the\ correct\ number\ of\ stones\ to\ take\n\ (according\ to\ the\ winning\ strategy)\ when\ nStones\n\ remain\ in\ the\ pile;\ if\ such\ a\ move\ is\ not\ possible,\n\ returns\ a\ random\ number\ of\ stones\ to\ take.\n\ Precondition\:\ nStones\ >\ 0\n
+comment2.params=nStones
+comment2.target=int\ humanMove(int)
+comment2.text=\n\ Prompts\ the\ user\ to\ take\ a\ number\ of\ stones;\n\ If\ the\ move\ is\ valid,\ returns\ the\ number\ of\ stones\n\ taken;\ otherwise,\ displays\ an\ error\ message\ --\n\ "You\ are\ allowed\ to\ only\ take\ 1,\ 2,\ or\ 3\ stones"\ or\n\ "Can't\ take\ that\ many\:\ only\ <nStones>\ left\ in\ the\ pile"\n\ --\ and\ returns\ -1\:\n\ Precondition\:\ nStones\ >\ 0\n
+comment3.params=
+comment3.target=void\ play()
+comment3.text=\n\ Plays\ the\ game\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=
+numComments=5
