@@ -2,17 +2,15 @@
 /**
  * Jonathan Lentz
  */
-public class Cube
+public class Cube extends RectangularPrism
 {
     private double sideLength;
-    public RectangularPrism(double l, double w, double h)
+    public Cube (double s)
     {
-        length = l;
-        width = w;
-        height = h;
+        super(s, s, s);
     }
     public double getVolume()
     {
-        return length*width*height;
+        return super.getVolume();
     }
 }

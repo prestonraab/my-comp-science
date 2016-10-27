@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 import javax.script.ScriptEngine;
+import javax.script.ScriptException;
 import javax.script.ScriptEngineManager;
 import java.util.Scanner;
 public class NewCalc
@@ -20,12 +21,13 @@ public class NewCalc
     {
         return j;
     }
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
+        System.out.println("Type in your expression");
         final ScriptEngineManager engineManager = new ScriptEngineManager();
         final ScriptEngine engine = engineManager.getEngineByName("JavaScript");
         Scanner input = new Scanner(System.in);
-        String expression=input.next();
+        String expression=input.nextLine();
         System.out.println(engine.eval(expression)); // prints 110.99997794278411
     }
 }
