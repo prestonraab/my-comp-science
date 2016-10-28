@@ -17,7 +17,6 @@ public class Rpscissors extends JFrame
   private final char moves[] = {'R', 'P', 'S'};
   private JRadioButton rock, paper, scissors;
   private JTextField display;
-
   public Rpscissors()
   {
     super("Rock, paper, Scissors");
@@ -80,7 +79,43 @@ public class Rpscissors extends JFrame
       }
       return result;
   }
+  public void actionPerformed(ActionEvent e)
+  {
+    char playerMove, computerMove;
+    if (rock.isSelected())
+      playerMove = 'R';
+    else if (paper.isSelected())
+      playerMove = 'P';
+    else // if (scissors.isSelected())
+      playerMove = 'S';
 
+    int k = (int)(Math.random() * 3);
+    computerMove = moves[k];
+    int result = nextPlay(computerMove, playerMove);
+
+    String msg = "  You said " + makeWord(playerMove) + ", I said " +
+                 makeWord(computerMove);
+    if (result < 0)
+      msg += " -- you win.";
+    else if (result == 0)
+      msg += " -- tie.";
+    else // if (result > 0)
+      msg += " -- I win.";
+    display.setText(msg);
+  }
+
+  private String makeWord(char move)
+  {
+    String word = "";
+
+    switch (move)
+    {
+      case 'R': word = "ROCK"; break;
+      case 'P': word = "PAPER"; break;
+      case 'S': word = "SCISSORS"; break;
+    }
+    return word;
+  }
   public static void main(String[] args)
   {
     Rpscissors window = new Rpscissors();
